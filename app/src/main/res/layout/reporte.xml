@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondorfn">
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="652dp"
+        android:foregroundGravity="fill"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-1dp">
+
+        <TextView
+            android:id="@+id/txtFecha"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aladin"
+            android:text="Fecha:"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+
+        <EditText
+            android:id="@+id/etFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:focusable="false"
+            android:fontFamily="@font/aladin"
+            android:hint="Seleccionar Fecha"
+            android:inputType="none"
+            android:onClick="mostrarSelectorFecha"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:translationX="125dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*">
+
+                <!-- Encabezado de la tabla -->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aladin"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Finca"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aladin"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Area"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aladin"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Bloque"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aladin"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Variedad"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aladin"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Enfermedad"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/aladin"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Cantidad"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                </TableRow>
+
+                <!-- Datos de la tabla -->
+                <LinearLayout
+                    android:id="@+id/contenedorDeFilas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!-- Aquí se agregarán las filas dinámicamente -->
+                </LinearLayout>
+
+
+                <!-- Agrega más filas según sea necesario -->
+
+            </TableLayout>
+
+        </TableLayout>
+
+        <!-- Datos de la tabla -->
+
+        <!-- Agrega más filas según sea necesario -->
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGeneraReporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aladin"
+        android:onClick="GenerarReporte"
+        android:text="Generar Reporte"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        app:icon="@drawable/report"
+        app:iconSize="30dp"
+        app:iconTint="#000000"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="675dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

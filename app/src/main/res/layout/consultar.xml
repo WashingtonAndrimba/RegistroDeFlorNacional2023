@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondorfn">
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="732dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="false"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="120sp"
+                android:fontFamily="@font/aladin"
+                android:text="Consultar y Actualizar"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aladin"
+            android:text="Seleccione el bloque"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:translationY="20dp" />
+
+        <Spinner
+            android:id="@+id/spBloqueConsulta"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:translationX="100dp"
+            android:translationY="20dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aladin"
+            android:text="Seleccione variedad"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:translationY="20dp" />
+
+        <Spinner
+            android:id="@+id/spVariedadConsulta"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:translationX="100dp"
+            android:translationY="20dp" />
+
+        <Button
+            android:id="@+id/btnCosultar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aladin"
+            android:text="Consultar"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:translationX="125dp"
+            android:translationY="20dp"
+            app:icon="@drawable/buscar"
+            app:iconSize="30dp"
+            app:iconTint="#000000"
+            app:strokeWidth="@dimen/cardview_default_elevation" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="435dp"
+            android:orientation="vertical"
+            android:translationY="20dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*">
+
+                    <!-- Encabezado de la tabla -->
+                    <TableRow android:id="@+id/tbConsultas">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aladin"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="Finca"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aladin"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="Area"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aladin"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="Bloque"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aladin"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="Variedad"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aladin"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="Enfermedad"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aladin"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="Cantidad"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <!-- Datos de la tabla -->
+                    <LinearLayout
+                        android:id="@+id/contenedorDeFilas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <!-- Aquí se agregarán las filas dinámicamente -->
+                    </LinearLayout>
+
+
+                    <!-- Agrega más filas según sea necesario -->
+
+                </TableLayout>
+
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnActualizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aladin"
+                android:text="Actualizar"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:translationX="125dp"
+                android:translationY="40dp"
+                app:icon="@drawable/update"
+                app:iconSize="30dp"
+                app:iconTint="@color/black"
+                app:strokeWidth="@dimen/cardview_default_elevation" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

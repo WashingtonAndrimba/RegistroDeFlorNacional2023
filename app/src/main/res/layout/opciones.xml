@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondorfn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|fill_vertical"
+        android:hapticFeedbackEnabled="false"
+        android:orientation="vertical"
+        app:guidelineUseRtl="false">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/rose"
+            android:translationX="145dp"
+            android:translationY="550dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/aladin"
+            android:text="Menu de opciones"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btnRegistro" />
+
+        <Button
+            android:id="@+id/btnRegistro"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#00A6FF4C"
+            android:backgroundTint="#040202"
+            android:fontFamily="@font/aladin"
+            android:text="Registro"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorLink="#000000"
+            android:textSize="20dp"
+            app:icon="@drawable/register"
+            app:iconSize="30dp"
+            app:iconTint="#000000" />
+
+        <Button
+            android:id="@+id/btnConsultarActualizar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#00A6FF4C"
+            android:fontFamily="@font/aladin"
+            android:text="Consultar y Actualizar"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textSize="20dp"
+            app:icon="@drawable/update"
+            app:iconSize="30dp"
+            app:iconTint="#000000" />
+
+        <Button
+            android:id="@+id/btnReporte"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#00A6FF4C"
+            android:fontFamily="@font/aladin"
+            android:text="Reporte"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textSize="20dp"
+            app:icon="@drawable/report"
+            app:iconSize="30dp"
+            app:iconTint="#000000" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
